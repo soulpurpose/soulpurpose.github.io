@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Soul Purpose Dance Company by soulpurpose</title>
+    <title>Soul Purpose Dance Company</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -15,13 +15,25 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+<style>.galleria{ width:700px; height: 400px; background:#000}</style>
   </head>
   <body>
       <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/soulpurpose">View On GitHub</a></li>
-        </nav>
+        <center><nav>
+         <!-- <li class="fork"><a href="https://github.com/soulpurpose">View On GitHub</a></li>
+        <!--</nav>-->
+        <!--<div id="navbar">-->
+          <ul>
+          <li class=""><a href="#">Home</a></li>
+          <li class=""><a href="#">Dancers</a></li>
+          <li class=""><a href="#">Anouncements</a></li>
+          <li class=""><a href="#">Events</a></li>
+          <li class=""><a href="#">Media</a></li>
+          <li class=""><a href="#">Feed</a></li>
+          </ul>
+</nav>
+</center>
+        <!--</div>-->
       </div><!-- end header -->
 
     <div class="wrapper">
@@ -31,11 +43,20 @@
           <h1>Soul Purpose Dance Company</h1>
           <p></p>
           <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/soulpurpose">soulpurpose</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+          <span class="credits left">Project maintained by Taylor and Cindy</span>
         </div>
 
-        <h3>
+        <script src="galleria/galleria-1.3.5.min.js"></script>
+<div class="galleria">
+  <img src="images/ex1.jpg">
+  <img src="images/ex2.jpg">
+  <img src="images/ex3.jpg">
+</div>
+<script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        </script>
+        <!--<h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
@@ -66,10 +87,13 @@ $ git checkout gh-pages
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+      --></section>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
+
+    
+  <!--<script>if (Galleria) { $("body").text('Galleria works')}</script>-->
   </body>
 </html>
