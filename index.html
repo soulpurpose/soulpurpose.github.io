@@ -274,7 +274,34 @@
                                     <h2>Contact Us</h2>
                                 </header>
                                 <p>Send an email to <b>soulpurposedancecompany@gmail.com</b></p>
-                                <a id="bcf_trigger" href="http://bettercontactform.com" rel="bcf_trigger">Contact Form</a>
+                                <form action="form_process.php" method="post" name="contact_form">
+									<div>
+										<div class="row half">
+											<div class="6u">
+												<input type="text" class="text" name="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" class="text" name="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<input type="text" class="text" name="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<textarea name="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="submit" class="button" value="Send Message" name="submit"/>
+                                                <input type="reset" class="button" value="Clear Form" name="reset"/>
+											</div>
+										</div>
+									</div>
+								</form>
                             </article>
                                                        
 						<!-- Work --> 
@@ -400,7 +427,5 @@
 					</div>
 		
 			</div>
-
-<script> /* var bcf_settings = { buttonText:'Contact Us', buttonTop:'30%', language:'en_US' }; // Better Contact Form Settings */ (function (d, s, id) { if ('https:' == document.location.protocol || d.getElementById(id)) return; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.src = "http://bettercontactform.com/contact/media/0/7/079923d3437ab3ddffe3f4c265e9e4217a4426ed.js"; fjs.parentNode.insertBefore(js, fjs); }(document, "script", "bcf-render"));</script>
 	</body>
 </html>
