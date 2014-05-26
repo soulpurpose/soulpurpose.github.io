@@ -26,7 +26,7 @@
 		/*
 			Fallback for browsers that don't support pseudo elements.
 		*/
-
+        overflow: hidden;
 		background: url('images/ian.jpg');
 	}
 
