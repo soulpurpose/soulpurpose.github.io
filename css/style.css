@@ -22,9 +22,11 @@
 	}
     .alignleft {
         float: left;
+        cursor: pointer;
     }
     .alignright {
         float: right;
+        cursor: pointer;
     }
 	body
 	{
