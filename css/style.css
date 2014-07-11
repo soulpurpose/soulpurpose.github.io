@@ -20,7 +20,12 @@
 		-ms-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-
+    .alignleft {
+        float: left;
+    }
+    .alignright {
+        float: right;
+    }
 	body
 	{
 		/*

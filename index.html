@@ -9,6 +9,101 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+        <script type="text/javascript">
+        function start(){
+            $('#august').hide();
+            $('#september').hide();
+            $('#october').hide();
+            $('#november').hide();
+            $('#december').hide();
+            $('#january').hide();
+            $('#february').hide();
+            $('#march').hide();
+            $('#april').hide();
+            $('#may').hide();
+        }
+            
+        function julyn() {
+            $('#july').hide();
+            $('#august').show();
+        }
+        function augustb() {
+            $('#august').hide();
+            $('#july').show();
+        }
+        function augustn() {
+            $('#august').hide();
+            $('#september').show();
+        }
+        function septemberb() {
+            $('#september').hide();
+            $('#august').show();
+        }
+        function septembern() {
+            $('#september').hide();
+            $('#october').show();
+        }
+        function octoberb() {
+            $('#october').hide();
+            $('#september').show();
+        }
+        function octobern() {
+            $('#october').hide();
+            $('#november').show();
+        }
+        function novemberb() {
+            $('#november').hide();
+            $('#october').show();
+        }
+        function novembern() {
+            $('#november').hide();
+            $('#december').show();
+        }
+        function decemberb() {
+            $('#december').hide();
+            $('#november').show();
+        }
+        function decembern() {
+            $('#december').hide();
+            $('#january').show();
+        }
+        function januaryb() {
+            $('#january').hide();
+            $('#december').show();
+        }
+        function januaryn() {
+            $('#january').hide();
+            $('#february').show();
+        }
+        function februaryb() {
+            $('#february').hide();
+            $('#january').show();
+        }
+        function februaryn() {
+            $('#february').hide();
+            $('#march').show();
+        }
+        function marchb() {
+            $('#march').hide();
+            $('#february').show();
+        }
+        function marchn() {
+            $('#march').hide();
+            $('#april').show();
+        }
+        function aprilb() {
+            $('#april').hide();
+            $('#march').show();
+        }
+        function apriln() {
+            $('#april').hide();
+            $('#may').show();
+        }
+        function mayb() {
+            $('#may').hide();
+            $('#april').show();
+        }
+        </script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -40,7 +135,7 @@
 
 </style>
 	</head>
-	<body class="homepage">
+	<body class="homepage" onload="start();">
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -245,72 +340,20 @@
                                     
                                     <h2>Fundraiser</h2>
                                     <p>Click on the poster, save, and spread the word!</p>
-                                    <center><a href="images/carwash.jpg" target="_blank"><img src="images/carwash.jpg"/></a></center>
+                                    <center><a href="images/carwash.jpg" target="_blank"><img src="images/carwash.jpg"/></a>
+                                    <a href="images/garagesale.jpeg" target="_blank"><img src="images/garagesale.jpeg"/></a>
+                                    </center>
                                 
                                     <h2>Practice Schedule</h2>
                                     
-                                    <iframe src="https://www.google.com/calendar/embed?src=ekd8642te26jcjti0o3v9bn9pc%40group.calendar.google.com&ctz=America/Los_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                                    <!--
-                                    <center><h3>June</h3></center>
-                                    <table id="month">
-<thead>
-<tr>
-<th class="weekend">Sunday</th>
-<th>Monday</th>
-<th>Tuesday</th>
-<th>Wednesday</th>
-<th>Thursday</th>
-<th>Friday</th>
-<th class="weekend">Saturday</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-</tr><tr>
-<td class="weekend"><span class="date">1</span><div class="day"></div></td>
-<td><span class="date">2</span><div class="day"><br><br><br></div></td>
-<td><span class="date">3</span><div class="day"></div></td>
-<td><span class="date">4</span><div class="day"></div></td>
-<td><span class="date">5</span><div class="day"></div></td>
-<td><span class="date">6</span><div class="day"></div></td>
-<td class="weekend"><span class="date">7</span><div class="day"></div></td>
-</tr><tr>
-<td class="weekend"><span class="date">8</span><div class="day"></div></td>
-<td><span class="date">9</span><div class="day"><br><br><br></div></td>
-<td><span class="date">10</span><div class="day"></div></td>
-<td><span class="date">11</span><div class="day"></div></td>
-<td><span class="date">12</span><div class="day"></div></td>
-<td><span class="date">13</span><div class="day"></div></td>
-<td class="weekend"><span class="date">14</span><div class="day"></div></td>
-</tr><tr>
-<td class="weekend"><span class="date">15</span><div class="day"></div></td>
-<td><span class="date">16</span><div class="day"><br><br><br></div></td>
-<td><span class="date">17</span><div class="day"><b><a href="images/intensives.jpg" target="_blank">Intensives</a></b><br>8AM-3PM</div></td>
-<td><span class="date">18</span><div class="day"></div></td>
-<td><span class="date">19</span><div class="day"><b><a href="images/intensives.jpg" target="_blank">Intensives</a></b><br>8AM-3:30PM<br><b><a href="images/teaculture.jpg" target="_blank">Tea Culture <br>Fundraiser</a></b></div></td>
-<td><span class="date">20</span><div class="day"><br><br><br></div></td>
-<td class="weekend"><span class="date">21</span><div class="day"></div></td>
-</tr><tr>
-<td class="weekend"><span class="date">22</span><div class="day"></div></td>
-<td><span class="date">23</span><div class="day"><br><br><br></div></td>
-<td><span class="date">24</span><div class="day"><b><a href="images/intensives.jpg" target="_blank">Intensives</a></b><br>8AM-3:45PM</div></div></td>
-<td><span class="date">25</span><div class="day"></div></td>
-<td><span class="date">26</span><div class="day"><b><a href="images/intensives.jpg" target="_blank">Intensives</a></b><br>8AM-3:45PM</div></div></td>
-<td><span class="date">27</span><div class="day"></div></td>
-<td class="weekend"><span class="date">28</span><div class="day"></div></td>
-</tr><tr>
-<td class="weekend"><span class="date">29</span><div class="day"></div></td>
-<td><span class="date">30</span><div class="day"></div></td>
-<td class="next"><span class="date">1</span><div class="day"><br><br><br></div></td>
-<td class="next"><span class="date">2</span><div class="day"></div></td>
-<td class="next"><span class="date">3</span><div class="day"></div></td>
-<td class="next"><span class="date">4</span><div class="day"></div></td>
-<td class="weekend next"><span class="date">5</span><div class="day"></div></td>
-</tr>
-</tbody>
-</table>
-    
+                                    <!--<iframe src="https://www.google.com/calendar/embed?src=ekd8642te26jcjti0o3v9bn9pc%40group.calendar.google.com&ctz=America/Los_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+                                
+<div id="july">         
     <center><h3>July</h3></center>
+    <div id="textbox">
+        <p class="alignright" onclick="julyn();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -346,8 +389,8 @@
 <td><span class="date">15</span><div class="day"></div></td>
 <td><span class="date">16</span><div class="day"></div></td>
 <td><span class="date">17</span><div class="day"></div></td>
-<td><span class="date">18</span><div class="day"><b>Car Wash</b><br>7AM-4PM</div></td>
-<td class="weekend"><span class="date">19</span><div class="day"><b>Garage Sale</b></div></td>
+<td><span class="date">18</span><div class="day"><a href="images/carwash.jpg" target="_blank"><b>Car Wash</b></a><br>8AM-3PM</div></td>
+<td class="weekend"><span class="date">19</span><div class="day"><a href="images/garagesale.jpeg" target="_blank"><b>Garage Sale</b></a><br>8AM-3PM</div></td>
 </tr><tr>
 <td class="weekend"><span class="date">20</span><div class="day"></div></td>
 <td><span class="date">21</span><div class="day"><br><br><br></div></td>
@@ -357,7 +400,7 @@
 <td><span class="date">25</span><div class="day"></div></td>
 <td class="weekend"><span class="date">26</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">27</span><div class="day"></div></td>
+<td class="weekend"><span class="date">27</span><div class="day"><a href="images/carwash.jpg" target="_blank"><b>Car Wash</b></a><br>8AM-3PM</div></td>
 <td><span class="date">28</span><div class="day"><br><br><br></div></td>
 <td><span class="date">29</span><div class="day"></div></td>
 <td><span class="date">30</span><div class="day"></div></td>
@@ -367,7 +410,15 @@
 </tr>
 </tbody>
 </table>
+</div>                             
+
+<div id="august">
     <center><h3>August</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="augustb();">Back</p>
+        <p class="alignright" onclick="augustn();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -432,8 +483,15 @@
 </tr>
 </tbody>
 </table>
-    
+</div>
+
+<div id="september">
 <center><h3>September</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="septemberb();">Back</p>
+        <p class="alignright" onclick="septembern();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -490,8 +548,15 @@
 </tr>
 </tbody>
 </table>
-    
+</div>
+                                
+<div id="october">
     <center><h3>October</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="octoberb();">Back</p>
+        <p class="alignright" onclick="octobern();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -548,8 +613,15 @@
 </tr>
 </tbody>
 </table>
+</div>
     
+<div id="november">
     <center><h3>November</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="novemberb();">Back</p>
+        <p class="alignright" onclick="novembern();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -614,8 +686,15 @@
 </tr>
 </tbody>
 </table>
+</div>
     
+<div id="december">
     <center><h3>December</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="decemberb();">Back</p>
+        <p class="alignright" onclick="decembern();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -672,8 +751,15 @@
 </tr>
 </tbody>
 </table>
-    
+</div>
+                                
+<div id="january">
     <center><h3>January</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="januaryb();">Back</p>
+        <p class="alignright" onclick="januaryn();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -689,7 +775,7 @@
 <tbody>
 <tr>
 <td class="previous weekend"><span class="date">28</span><div class="day"></div></td>
-<td class="previous"><span class="date">29</span><div class="day"></div></td>
+<td class="previous"><span class="date">29</span><div class="day"><br><br><br></div></td>
 <td class="previous"><span class="date">30</span><div class="day"></div></td>
 <td class="previous"><span class="date">31</span><div class="day"></div></td>
 <td><span class="date">1</span><div class="day"></div></td>
@@ -697,7 +783,7 @@
 <td class="weekend"><span class="date">3</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">4</span><div class="day"></div></td>
-<td><span class="date">5</span><div class="day"></div></td>
+<td><span class="date">5</span><div class="day"><br><br><br></div></td>
 <td><span class="date">6</span><div class="day"></div></td>
 <td><span class="date">7</span><div class="day"></div></td>
 <td><span class="date">8</span><div class="day"></div></td>
@@ -705,7 +791,7 @@
 <td class="weekend"><span class="date">10</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">11</span><div class="day"></div></td>
-<td><span class="date">12</span><div class="day"></div></td>
+<td><span class="date">12</span><div class="day"><br><br><br></div></td>
 <td><span class="date">13</span><div class="day"></div></td>
 <td><span class="date">14</span><div class="day"></div></td>
 <td><span class="date">15</span><div class="day"></div></td>
@@ -713,7 +799,7 @@
 <td class="weekend"><span class="date">17</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">18</span><div class="day"></div></td>
-<td><span class="date">19</span><div class="day"></div></td>
+<td><span class="date">19</span><div class="day"><br><br><br></div></td>
 <td><span class="date">20</span><div class="day"></div></td>
 <td><span class="date">21</span><div class="day"></div></td>
 <td><span class="date">22</span><div class="day"></div></td>
@@ -721,7 +807,7 @@
 <td class="weekend"><span class="date">24</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">25</span><div class="day"></div></td>
-<td><span class="date">26</span><div class="day"></div></td>
+<td><span class="date">26</span><div class="day"><br><br><br></div></td>
 <td><span class="date">27</span><div class="day"></div></td>
 <td><span class="date">28</span><div class="day"></div></td>
 <td><span class="date">29</span><div class="day"></div></td>
@@ -730,8 +816,15 @@
 </tr>
 </tbody>
 </table>
+</div>
     
+<div id="february">
     <center><h3>February</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="februaryb();">Back</p>
+        <p class="alignright" onclick="februaryn();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -748,7 +841,7 @@
 <tr>
 </tr><tr>
 <td class="weekend"><span class="date">1</span><div class="day"></div></td>
-<td><span class="date">2</span><div class="day"></div></td>
+<td><span class="date">2</span><div class="day"><br><br><br></div></td>
 <td><span class="date">3</span><div class="day"></div></td>
 <td><span class="date">4</span><div class="day"></div></td>
 <td><span class="date">5</span><div class="day"></div></td>
@@ -756,7 +849,7 @@
 <td class="weekend"><span class="date">7</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">8</span><div class="day"></div></td>
-<td><span class="date">9</span><div class="day"></div></td>
+<td><span class="date">9</span><div class="day"><br><br><br></div></td>
 <td><span class="date">10</span><div class="day"></div></td>
 <td><span class="date">11</span><div class="day"></div></td>
 <td><span class="date">12</span><div class="day"></div></td>
@@ -764,7 +857,7 @@
 <td class="weekend"><span class="date">14</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">15</span><div class="day"></div></td>
-<td><span class="date">16</span><div class="day"></div></td>
+<td><span class="date">16</span><div class="day"><br><br><br></div></td>
 <td><span class="date">17</span><div class="day"></div></td>
 <td><span class="date">18</span><div class="day"></div></td>
 <td><span class="date">19</span><div class="day"></div></td>
@@ -772,7 +865,7 @@
 <td class="weekend"><span class="date">21</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">22</span><div class="day"></div></td>
-<td><span class="date">23</span><div class="day"></div></td>
+<td><span class="date">23</span><div class="day"><br><br><br></div></td>
 <td><span class="date">24</span><div class="day"></div></td>
 <td><span class="date">25</span><div class="day"></div></td>
 <td><span class="date">26</span><div class="day"></div></td>
@@ -781,8 +874,15 @@
 </tr>
 </tbody>
 </table>
+</div>
     
+<div id="march">
     <center><h3>March</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="marchb();">Back</p>
+        <p class="alignright" onclick="marchn();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -799,7 +899,7 @@
 <tr>
 </tr><tr>
 <td class="weekend"><span class="date">1</span><div class="day"></div></td>
-<td><span class="date">2</span><div class="day"></div></td>
+<td><span class="date">2</span><div class="day"><br><br><br></div></td>
 <td><span class="date">3</span><div class="day"></div></td>
 <td><span class="date">4</span><div class="day"></div></td>
 <td><span class="date">5</span><div class="day"></div></td>
@@ -807,7 +907,7 @@
 <td class="weekend"><span class="date">7</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">8</span><div class="day"></div></td>
-<td><span class="date">9</span><div class="day"></div></td>
+<td><span class="date">9</span><div class="day"><br><br><br></div></td>
 <td><span class="date">10</span><div class="day"></div></td>
 <td><span class="date">11</span><div class="day"></div></td>
 <td><span class="date">12</span><div class="day"></div></td>
@@ -815,7 +915,7 @@
 <td class="weekend"><span class="date">14</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">15</span><div class="day"></div></td>
-<td><span class="date">16</span><div class="day"></div></td>
+<td><span class="date">16</span><div class="day"><br><br><br></div></td>
 <td><span class="date">17</span><div class="day"></div></td>
 <td><span class="date">18</span><div class="day"></div></td>
 <td><span class="date">19</span><div class="day"></div></td>
@@ -823,7 +923,7 @@
 <td class="weekend"><span class="date">21</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">22</span><div class="day"></div></td>
-<td><span class="date">23</span><div class="day"></div></td>
+<td><span class="date">23</span><div class="day"><br><br><br></div></td>
 <td><span class="date">24</span><div class="day"></div></td>
 <td><span class="date">25</span><div class="day"></div></td>
 <td><span class="date">26</span><div class="day"></div></td>
@@ -831,7 +931,7 @@
 <td class="weekend"><span class="date">28</span><div class="day"></div></td>
 </tr><tr>
 <td class="weekend"><span class="date">29</span><div class="day"></div></td>
-<td><span class="date">30</span><div class="day"></div></td>
+<td><span class="date">30</span><div class="day"><br><br><br></div></td>
 <td><span class="date">31</span><div class="day"></div></td>
 <td class="next"><span class="date">1</span><div class="day"></div></td>
 <td class="next"><span class="date">2</span><div class="day"></div></td>
@@ -840,8 +940,15 @@
 </tr>
 </tbody>
 </table>
+</div>
     
+<div id="april">
     <center><h3>April</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="aprilb();">Back</p>
+        <p class="alignright" onclick="apriln();">Next</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -856,7 +963,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="previous weekend"><span class="date">29</span><div class="day"></div></td>
+<td class="previous weekend"><span class="date">29</span><div class="day"><br><br><br></div></td>
 <td class="previous"><span class="date">30</span><div class="day"></div></td>
 <td class="previous"><span class="date">31</span><div class="day"></div></td>
 <td><span class="date">1</span><div class="day"><br><br><br></div></td>
@@ -864,7 +971,7 @@
 <td><span class="date">3</span><div class="day"></div></td>
 <td class="weekend"><span class="date">4</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">5</span><div class="day"></div></td>
+<td class="weekend"><span class="date">5</span><div class="day"><br><br><br></div></td>
 <td><span class="date">6</span><div class="day"><br><br><br></div></td>
 <td><span class="date">7</span><div class="day"></div></td>
 <td><span class="date">8</span><div class="day"></div></td>
@@ -872,7 +979,7 @@
 <td><span class="date">10</span><div class="day"></div></td>
 <td class="weekend"><span class="date">11</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">12</span><div class="day"></div></td>
+<td class="weekend"><span class="date">12</span><div class="day"><br><br><br></div></td>
 <td><span class="date">13</span><div class="day"><br><br><br></div></td>
 <td><span class="date">14</span><div class="day"></div></td>
 <td><span class="date">15</span><div class="day"></div></td>
@@ -880,7 +987,7 @@
 <td><span class="date">17</span><div class="day"></div></td>
 <td class="weekend"><span class="date">18</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">19</span><div class="day"></div></td>
+<td class="weekend"><span class="date">19</span><div class="day"><br><br><br></div></td>
 <td><span class="date">20</span><div class="day"><br><br><br></div></td>
 <td><span class="date">21</span><div class="day"></div></td>
 <td><span class="date">22</span><div class="day"></div></td>
@@ -888,7 +995,7 @@
 <td><span class="date">24</span><div class="day"></div></td>
 <td class="weekend"><span class="date">25</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">26</span><div class="day"></div></td>
+<td class="weekend"><span class="date">26</span><div class="day"><br><br><br></div></td>
 <td><span class="date">27</span><div class="day"><br><br><br></div></td>
 <td><span class="date">28</span><div class="day"></div></td>
 <td><span class="date">29</span><div class="day"></div></td>
@@ -898,8 +1005,14 @@
 </tr>
 </tbody>
 </table>
+</div>
     
+<div id="may">
     <center><h3>May</h3></center>
+    <div id="textbox">
+        <p class="alignleft" onclick="mayb();">Back</p>
+    </div>
+    <div style="clear: both;"></div>
     <table id="month">
 <thead>
 <tr>
@@ -914,7 +1027,7 @@
 </thead>
 <tbody>
 <tr>
-<td class="previous weekend"><span class="date">26</span><div class="day"></div></td>
+<td class="previous weekend"><span class="date">26</span><div class="day"><br><br><br></div></td>
 <td class="previous"><span class="date">27</span><div class="day"><br><br><br></div></td>
 <td class="previous"><span class="date">28</span><div class="day"></div></td>
 <td class="previous"><span class="date">29</span><div class="day"></div></td>
@@ -922,7 +1035,7 @@
 <td><span class="date">1</span><div class="day"></div></td>
 <td class="weekend"><span class="date">2</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">3</span><div class="day"></div></td>
+<td class="weekend"><span class="date">3</span><div class="day"><br><br><br></div></td>
 <td><span class="date">4</span><div class="day"><br><br><br></div></td>
 <td><span class="date">5</span><div class="day"></div></td>
 <td><span class="date">6</span><div class="day"></div></td>
@@ -930,7 +1043,7 @@
 <td><span class="date">8</span><div class="day"></div></td>
 <td class="weekend"><span class="date">9</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">10</span><div class="day"></div></td>
+<td class="weekend"><span class="date">10</span><div class="day"><br><br><br></div></td>
 <td><span class="date">11</span><div class="day"><br><br><br></div></td>
 <td><span class="date">12</span><div class="day"></div></td>
 <td><span class="date">13</span><div class="day"></div></td>
@@ -938,7 +1051,7 @@
 <td><span class="date">15</span><div class="day"></div></td>
 <td class="weekend"><span class="date">16</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">17</span><div class="day"></div></td>
+<td class="weekend"><span class="date">17</span><div class="day"><br><br><br></div></td>
 <td><span class="date">18</span><div class="day"><br><br><br></div></td>
 <td><span class="date">19</span><div class="day"></div></td>
 <td><span class="date">20</span><div class="day"></div></td>
@@ -946,7 +1059,7 @@
 <td><span class="date">22</span><div class="day"></div></td>
 <td class="weekend"><span class="date">23</span><div class="day"></div></td>
 </tr><tr>
-<td class="weekend"><span class="date">24</span><div class="day"></div></td>
+<td class="weekend"><span class="date">24</span><div class="day"><br><br><br></div></td>
 <td><span class="date">25</span><div class="day"><br><br><br></div></td>
 <td><span class="date">26</span><div class="day"></div></td>
 <td><span class="date">27</span><div class="day"></div></td>
@@ -963,7 +1076,9 @@
 <td class="weekend next"><span class="date">6</span><div class="day"></div></td>
 </tr>
 </tbody>
-</table>-->
+</table>
+</div>
+                                <br>
                                     
                                     <h3>Company Only Camp</h3>
                                     <p>August 5, 7, and 12 at 8:00am-3:00pm</p>
