@@ -35,6 +35,8 @@
 		*/
         overflow: hidden;
 		background: url('images/ian.jpg');
+        height: 100%;
+        width: 100%;
 	}
 
 		body:before
