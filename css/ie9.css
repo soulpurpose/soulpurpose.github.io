@@ -16,7 +16,7 @@
 		}
 
 		.spotlight .content {
-			padding: 4em 4em 2em 4em;
+			padding: 4em 4em 2em 4em ;
 			display: inline-block;
 		}
 
@@ -74,7 +74,7 @@
 /* Banner */
 
 	#banner {
-		padding: 14em 0 12em 0;
+		padding: 14em 0 12em 0 ;
 		height: auto;
 	}
 

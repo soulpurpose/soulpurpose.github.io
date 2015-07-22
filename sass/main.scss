@@ -1,7 +1,6 @@
-@import 'vars';
-@import 'functions';
-@import 'mixins';
-@import 'skel-layout';
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
 @import 'font-awesome.min.css';
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
@@ -11,22 +10,27 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* IE Viewport Fix */
+	@import 'libs/skel';
 
-	@-ms-viewport { width: device-width; }
+	@include skel-breakpoints((
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)'
+	));
 
-/* Skel */
-
-	@include skel-layout(
-		$breakpoints,
-		(
-			reset: 'full',
-			boxModel: 'border',
-			grid: ( gutters: (1.5em, 0) )
-		)
-	);
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: ( gutters: 1.5em )
+	));
 
 /* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
 
 	body {
 		background: _palette(bg);
@@ -300,13 +304,14 @@
 	}
 
 	.select-wrapper {
-		@include icon('\f078');
+		@include icon;
 		display: block;
 		position: relative;
 
 		&:before {
 			@include vendor('pointer-events', 'none');
 			color: _palette(border);
+			content: '\f078';
 			display: block;
 			height: _size(element-height);
 			line-height: _size(element-height);
@@ -1664,7 +1669,7 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1789,7 +1794,7 @@
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1810,7 +1815,7 @@
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
