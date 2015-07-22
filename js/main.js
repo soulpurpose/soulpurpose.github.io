@@ -61,7 +61,7 @@
 					speed: 1500,
 					offset: $header.outerHeight()
 				});
-        
+
 		// Menu.
 			$('#menu')
 				.append('<a href="#menu" class="close"></a>')
@@ -96,7 +96,5 @@
 			}
 
 	});
-    
-    
 
 })(jQuery);
